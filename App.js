@@ -13,15 +13,15 @@ const Stack = createStackNavigator();
 
 
 const App = () => {
-  return (
-    <NavigationContainer> 
-        <Stack.Navigator>
-    <Stack.Screen name="Login" component={Login} />
-    <Stack.Screen name="Home" component={Home} />
-    <Stack.Screen name="About" component={About} />
-  </Stack.Navigator>
+    return (
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="About" component={About} />
+            </Stack.Navigator>
         </NavigationContainer>
-  )
+    )
 }
 
 export default App

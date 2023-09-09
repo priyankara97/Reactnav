@@ -1,11 +1,11 @@
 import { View, Text, Button } from 'react-native'
 import React from 'react'
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <View>
       <Text>Login</Text>
-      <Button title='Login'></Button>
+      <Button onPress={()=>{navigation.navigate('Home')}} title='Login'></Button>
     </View>
   )
 }
